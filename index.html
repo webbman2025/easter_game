@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoSIM WeChat Mini Program</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="phone" aria-label="SoSIM dashboard">
+        <header class="top">
+          <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="status-icons">
+              <img src="https://www.figma.com/api/mcp/asset/e308525d-03b7-4561-9490-b77a79e3846e" alt="" />
+              <img src="https://www.figma.com/api/mcp/asset/4b14264d-844c-4a23-ae27-8e5182fd5a21" alt="" />
+              <img src="https://www.figma.com/api/mcp/asset/df8eb3bc-e19a-4b0a-a590-8013fde4c926" alt="" />
+            </div>
+          </div>
+          <div class="nav-bar">
+            <button class="nav-back" aria-label="返回">
+              <img src="https://www.figma.com/api/mcp/asset/00be7869-6647-4ddf-a3f6-200283bf397b" alt="" />
+            </button>
+            <h1>賬戶信息</h1>
+            <div class="nav-tools" aria-hidden="true">
+              <img src="https://www.figma.com/api/mcp/asset/6460983d-b1f4-4b56-bfd1-184570735d76" alt="" />
+              <img class="divider" src="https://www.figma.com/api/mcp/asset/14062f2d-c5d0-4e6a-aa18-9c536eea0297" alt="" />
+              <img src="https://www.figma.com/api/mcp/asset/2012b1aa-6755-4cdf-87e7-51ef5990ece1" alt="" />
+            </div>
+          </div>
+        </header>
+
+        <section class="dashboard">
+          <article class="card profile">
+            <div class="welcome-row">
+              <div class="welcome-left">
+                <span>歡迎回來</span>
+                <img src="https://www.figma.com/api/mcp/asset/1f790a62-1277-4435-936c-9de66d645bb1" alt="SoSIM" />
+              </div>
+              <button class="btn btn-switch">切換賬戶 <span>▼</span></button>
+            </div>
+            <h2>基本資料</h2>
+
+            <div class="info-list">
+              <div class="info-row">
+                <div class="label"><span class="icon">☎</span> 電話號碼</div>
+                <div class="value">95741021</div>
+              </div>
+              <div class="info-row">
+                <div class="label"><span class="icon">✉</span> 綁定郵箱</div>
+                <div class="value">sosim88@hthk.com</div>
+              </div>
+              <div class="info-row highlight">
+                <div class="left">
+                  <div class="label"><span class="icon">▣</span> 儲值卡有效期</div>
+                  <div class="date">2026年10月14日</div>
+                </div>
+                <div class="pill">剩餘219日</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card balance">
+            <h2>賬戶餘額</h2>
+            <div class="balance-row">
+              <div class="amount">
+                <div class="amount-top">HKD$</div>
+                <div class="amount-value">120</div>
+              </div>
+              <div class="actions">
+                <button class="btn btn-topup">線上增值</button>
+                <button class="btn btn-buy">購買服務</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card plans">
+            <h2>現時生效組合</h2>
+            <div class="plan-item">
+              <div class="plan-title">360日/10GB大中華外遊數據</div>
+              <div class="plan-balance">可用結餘 <strong>6.9</strong> /10GB</div>
+              <button class="more">詳細資料 <span>⌄</span></button>
+            </div>
+          </article>
+
+          <article class="block">
+            <h3>我的優惠券</h3>
+            <img class="banner" src="https://www.figma.com/api/mcp/asset/7b3d7b3e-7b36-4a17-9c98-ed2e4aeb54d9" alt="我的優惠券" />
+          </article>
+
+          <article class="block">
+            <h3>多元組合</h3>
+            <img class="banner" src="https://www.figma.com/api/mcp/asset/c7f8e71a-c863-41ab-9f98-b87f2f2b2d00" alt="多元組合" />
+            <div class="dots"><span class="active"></span><span></span></div>
+          </article>
+        </section>
+
+        <footer class="tabbar">
+          <div class="tabs">
+            <button class="tab">
+              <span class="tab-icon">⌂</span>
+              <span>主頁</span>
+            </button>
+            <button class="tab">
+              <span class="tab-icon">▣</span>
+              <span>購買</span>
+            </button>
+            <button class="tab active">
+              <span class="tab-icon">●</span>
+              <span>我的</span>
+            </button>
+          </div>
+          <div class="home-indicator"></div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
