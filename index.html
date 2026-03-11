@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Easter Match-3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hud">
+      <div class="stat">
+        <span class="label">Level</span>
+        <span id="levelValue" class="value">1</span>
+      </div>
+      <div class="stat">
+        <span class="label">Score</span>
+        <span id="scoreValue" class="value">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Moves Left</span>
+        <span id="movesValue" class="value">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Target</span>
+        <span id="targetValue" class="value">0</span>
+      </div>
+    </header>
+
+    <section class="controls">
+      <button id="restartBtn" class="btn">Restart</button>
+    </section>
+
+    <section id="board" class="board" aria-label="Game board"></section>
+    <section class="timer-wrap" aria-label="Time remaining">
+      <div id="timerBar" class="timer-bar"></div>
+    </section>
+  </main>
+
+  <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <h2 id="modalTitle">Level Complete</h2>
+      <p id="modalMessage">You found all the eggs!</p>
+      <div class="modal-actions">
+        <button id="primaryModalBtn" class="btn">Next Level</button>
+        <button id="secondaryModalBtn" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
